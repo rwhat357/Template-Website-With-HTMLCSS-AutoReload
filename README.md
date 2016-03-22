@@ -1,4 +1,4 @@
-# Template
+# Template Website With HTMLCSS AutoReload
 Simple starting template to start building websites with html and css with livereload
 
 #How to set it up on your local machine to start creating websites?
