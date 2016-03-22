@@ -1,0 +1,255 @@
+/*
+TABLE OF CONTENTS
+  1. GENERAL
+  2. TOP BAR
+  3. MENU
+  4. CONTAINER
+  5. THEME PICTURE
+  6. CONTENT
+  7. SIDEBAR
+
+
+/*** 1. GENERAL ***/
+
+body {
+    font-family: Arial;
+    font-size: 12px;
+}
+
+textarea {
+    width: 100%;
+    height: 160px;
+}
+
+a.expandable-title:hover {
+    font-size: 17px;
+}
+
+
+/*** 2. TOP BAR ***/
+
+#top-bar {
+    background-color: #001a66;
+    padding: 10px 20px;
+    margin-bottom: 2px;
+    color: #fff;
+    min-width: 942px;
+    font-size: 14px;
+    font-family: arial;
+}
+
+#top-bar a {
+    color: inherit;
+    text-decoration: none;
+}
+
+#top-bar a:hover {
+    color: #e0c562;
+}
+
+#top-bar .cur-user-info {
+    display: inline;
+}
+
+#top-bar .main-search {
+    display: inline;
+    padding: 0px 10px;
+}
+
+#top-bar .logout-container {
+    display: inline;
+    padding: 2px 0px 10px;
+}
+
+#top-bar input {
+    border-radius: 4px;
+}
+
+
+/*** 3. MENU ***/
+
+#main-menu {
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-family: arial;
+    font-weight: bold;
+    min-width: 942px;
+    min-height: 26px;
+    background-color: #009ACD;
+}
+
+#main-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#main-menu li {
+    float: left;
+}
+
+#main-menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 6px 9px;
+    text-decoration: none;
+}
+
+#main-menu li a:hover {
+    background-color: #00688B;
+}
+
+#main-menu .active {
+    background-color: #00688B;
+}
+
+
+/*** 4. CONTAINER ***/
+
+#container {
+    border: solid #001a66;
+    border-width: 0px 1px 1px;
+    width: 942px;
+    clear: left;
+    font-size: 1.1em;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    /* floating stuff within a div, floats outside of div. Why?: http://stackoverflow.com/questions/2062258/floating-stuff-within-a-div-floats-outside-of-div-why */
+}
+
+
+/*** 5. THEME PICTURE ***/
+
+#transparency {
+    background-color: #f2f2f2;
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    opacity: 0.1;
+}
+
+#logo {
+    position: absolute;
+    margin: 10px auto 10px 15px;
+}
+
+#picture {
+    background-color: #ccc;
+}
+
+
+/*** 6. CONTENT ***/
+
+#content {
+    background-color: #fff;
+    width: 70%;
+    float: left;
+    padding: 20px;
+}
+
+#content h1,
+#content h2,
+#content h3 {
+    margin: 12px 0px 0px 0px;
+}
+
+#content h1 {
+    color: #00004d;
+    text-align: center;
+}
+
+#content h2 {
+    color: #00004d;
+    text-align: center;
+    font-family: Times New Roman;
+    font-weight: 300;
+}
+
+a.expandable-title {
+    color: #2b90d9;
+    text-align: left;
+    font-family: New Times Roman;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+
+/* term or semester*/
+
+.term {
+    background-color: #BD8C8C;
+    min-height: 200px;
+}
+
+.term .term-header {
+    background-color: #683E3E;
+}
+
+.term .term-header .term-header-title {
+    background-color: #3D8946;
+}
+
+.term .term-header .term-header-status {
+    background-color: #2863B3;
+}
+
+.term .term-body {
+    background-color: #B8BD8C;
+}
+
+
+/*** 7. SIDEBAR ***/
+
+#sidebar {
+    background-color: #ccd8ff;
+    width: 30%;
+    height: 100%;
+    float: left;
+    padding: 20px;
+    border-left: 1px solid black;
+}
+
+.sidebar-block {}
+
+.sidebar-block .sidebar-block-title {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 30px 0px 10px;
+    text-align: center;
+}
+
+.highlight-font {
+    color: blue;
+}
+
+.undecorate-anchors {
+    text-decoration: none;
+}
+
+
+/* course key legend */
+
+.legend-box {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin: 10px 10px -6px 0px;
+}
+
+.legend-box.legend-box-bju-core {
+    background: #00004C;
+}
+
+.legend-box.legend-box-major-courses {
+    background: #000099;
+}
+
+.legend-box.legend-box-electives {
+    background: #9999b7;
+}

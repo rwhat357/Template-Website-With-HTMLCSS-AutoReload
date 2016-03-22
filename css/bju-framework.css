@@ -1,0 +1,212 @@
+/*
+DESCRIPTION: 
+
+TABLE OF CONTENTS
+    1. GENERAL
+    2. GRID
+    3. BUTTONS
+    4. HELPERS: CENTERING
+    5. TOP & BOTTOM SPACING
+    6. ALERTS
+
+*/
+
+
+/*** 1. GENERAL ***/
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+
+/* put floating elements inside parent container */
+
+div {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/*** 2. GRID ***/
+
+
+/* ref: http://www.responsivegridsystem.com/calculator */
+
+.row {
+    clear: both;
+    padding: 0px;
+    margin: 0px;
+}
+
+.col {
+    display: block;
+    float: left;
+    margin: 1% 0 1% 1.6%;
+    background-color: blue;
+}
+
+.col:first-child {
+    margin-left: 0;
+}
+
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+.group {
+    zoom: 1;
+    /* For IE 6/7 */
+}
+
+.col-span-12 {
+    width: 100%;
+}
+
+.col-span-11 {
+    width: 91.53%;
+}
+
+.col-span-10 {
+    width: 83.06%;
+}
+
+.col-span-9 {
+    width: 74.6%;
+}
+
+.col-span-8 {
+    width: 66.13%;
+}
+
+.col-span-7 {
+    width: 57.66%;
+}
+
+.col-span-6 {
+    width: 49.2%;
+}
+
+.col-span-5 {
+    width: 40.73%;
+}
+
+.col-span-4 {
+    width: 32.26%;
+}
+
+.col-span-3 {
+    width: 23.8%;
+}
+
+.col-span-2 {
+    width: 15.33%;
+}
+
+.col-span-1 {
+    width: 6.866%;
+}
+
+
+/*** 3. BUTTONS ***/
+
+button.btn {
+    border-color: #2b90d9;
+    color: #2b90d9;
+    border: 2px solid #2b90d9;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 4px 15px;
+    font-family: TImes New Roman;
+    font-size: 13px;
+
+}
+
+.btn.btn-primary {
+    border-color: #2b90d9;
+    color: #2b90d9;
+}
+
+.btn.btn-success {
+    border-color: green;
+    color: green;
+}
+
+
+/*** 4. HELPERS CENTERING ***/
+
+.center {
+    text-align: center;
+}
+
+.center-element {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.vertical-center {
+    position: absolute;
+}
+
+
+/*** 5. TOP & BOTTOM SPACING ***/
+
+.margin-top-xs {
+    margin-top: 10px;
+}
+
+.margin-top-sm {
+    margin-top: 20px;
+}
+
+.margin-top-md {
+    margin-top: 30px;
+}
+
+.margin-top-lg {
+    margin-top: 40px;
+}
+
+.margin-top-xl {
+    margin-top: 50px;
+}
+
+.margin-bottom-xs {
+    margin-bottom: 10px;
+}
+
+.margin-bottom-sm {
+    margin-bottom: 20px;
+}
+
+.margin-bottom-md {
+    margin-bottom: 30px;
+}
+
+.margin-bottom-lg {
+    margin-bottom: 40px;
+}
+
+.margin-bottom-xl {
+    margin-bottom: 50px;
+}
+
+
+/*** 6. ALERTS ***/
+
+.alert.alert-warning {
+    margin: 7px 0px;
+    padding: 10px 10px 10px 36px;
+    background: #fff url('../icons/warning.png') no-repeat 10px 25%;
+}
