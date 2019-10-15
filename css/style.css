@@ -13,16 +13,20 @@ TABLE OF CONTENTS
 
 body {
     font-family: Arial;
-    font-size: 12px;
+    font-size: 0.75rem;
+    font-weight:550;
+   
 }
 
 textarea {
     width: 100%;
-    height: 160px;
+    height: 12rem;
 }
 
 a.expandable-title:hover {
     font-size: 17px;
+    color:orange;
+    font-weight:600;
 }
 
 
@@ -44,11 +48,12 @@ a.expandable-title:hover {
 }
 
 #top-bar a:hover {
-    color: #e0c562;
+    color:orange;
 }
 
 #top-bar .cur-user-info {
     display: inline;
+    
 }
 
 #top-bar .main-search {
@@ -58,7 +63,7 @@ a.expandable-title:hover {
 
 #top-bar .logout-container {
     display: inline;
-    padding: 2px 0px 10px;
+    padding: 4px 0px 10px;
 }
 
 #top-bar input {
@@ -94,16 +99,18 @@ a.expandable-title:hover {
     display: block;
     color: white;
     text-align: center;
-    padding: 6px 9px;
+    padding: 6px 14px;
     text-decoration: none;
 }
 
 #main-menu li a:hover {
     background-color: #00688B;
+    border-radius: 5px;
 }
 
 #main-menu .active {
     background-color: #00688B;
+    border-radius: 5px;
 }
 
 
@@ -111,13 +118,13 @@ a.expandable-title:hover {
 
 #container {
     border: solid #001a66;
-    border-width: 0px 1px 1px;
+    border-width: 2px 1px 1px;
     width: 942px;
     clear: left;
-    font-size: 1.1em;
+    font-size: 1.2em;
     margin: 0 auto;
     position: relative;
-    overflow: hidden;
+    overflow:hidden;
     /* floating stuff within a div, floats outside of div. Why?: http://stackoverflow.com/questions/2062258/floating-stuff-within-a-div-floats-outside-of-div-why */
 }
 
@@ -165,14 +172,14 @@ a.expandable-title:hover {
 #content h2 {
     color: #00004d;
     text-align: center;
-    font-family: Times New Roman;
+    font-family: "Times New Roman";
     font-weight: 300;
 }
 
 a.expandable-title {
     color: #2b90d9;
     text-align: left;
-    font-family: New Times Roman;
+    font-family: "New Times Roman";
     font-size: 16px;
     font-weight: 500;
     text-decoration: none;
